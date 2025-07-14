@@ -26,18 +26,18 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	osmock "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/os"
-	osinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/os"
+	osmock "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/os"
+	osinterface "github.com/wmcram/dcgm-exporter/internal/pkg/os"
 
-	mockdcgm "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/dcgmprovider"
-	mockdeviceinfo "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/deviceinfo"
-	mockdevicewatchlistmanager "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/devicewatchlistmanager"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/dcgmprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatcher"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatchlistmanager"
+	mockdcgm "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/dcgmprovider"
+	mockdeviceinfo "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/deviceinfo"
+	mockdevicewatchlistmanager "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/devicewatchlistmanager"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatcher"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatchlistmanager"
 )
 
 var deviceWatcher = devicewatcher.NewDeviceWatcher()

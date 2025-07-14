@@ -1,4 +1,4 @@
-module github.com/NVIDIA/dcgm-exporter
+module github.com/wmcram/dcgm-exporter
 
 go 1.23.0
 
@@ -20,10 +20,10 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.10.0
 	github.com/urfave/cli/v2 v2.27.6
-	go.uber.org/automaxprocs v1.6.0
 	go.uber.org/mock v0.5.0
 	golang.org/x/sync v0.12.0
 	google.golang.org/grpc v1.71.1
+	helm.sh/helm/v3 v3.17.3
 	k8s.io/api v0.32.3
 	k8s.io/apimachinery v0.32.3
 	k8s.io/client-go v0.32.3
@@ -158,7 +158,6 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	helm.sh/helm/v3 v3.17.3 // indirect
 	k8s.io/apiextensions-apiserver v0.32.3 // indirect
 	k8s.io/apiserver v0.32.3 // indirect
 	k8s.io/cli-runtime v0.32.3 // indirect
@@ -174,3 +173,5 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.6.0 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
+
+replace github.com/NVIDIA/dcgm-exporter => github.com/wmcram/dcgm-exporter v0.0.0-20250714184206-537c624e7c30

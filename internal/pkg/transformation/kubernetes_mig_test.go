@@ -26,12 +26,12 @@ import (
 	"go.uber.org/mock/gomock"
 	"google.golang.org/grpc"
 
-	mocknvmlprovider "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/nvmlprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/nvmlprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/testutils"
+	mocknvmlprovider "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/nvmlprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/nvmlprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/testutils"
 	podresourcesapi "k8s.io/kubelet/pkg/apis/podresources/v1"
 )
 

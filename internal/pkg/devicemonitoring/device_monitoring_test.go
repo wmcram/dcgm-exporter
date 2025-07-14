@@ -23,10 +23,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 
-	mockdeviceinfo "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/testutils"
+	mockdeviceinfo "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/testutils"
 )
 
 func TestGetMonitoredEntities(t *testing.T) {

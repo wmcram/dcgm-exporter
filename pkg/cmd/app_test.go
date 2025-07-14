@@ -26,11 +26,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/urfave/cli/v2"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/dcgmprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatchlistmanager"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/testutils"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatchlistmanager"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/testutils"
 )
 
 func Test_getDeviceWatchListManager(t *testing.T) {

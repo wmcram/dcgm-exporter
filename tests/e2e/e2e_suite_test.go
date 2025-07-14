@@ -35,7 +35,7 @@ import (
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/utils/ptr"
 
-	"github.com/NVIDIA/dcgm-exporter/tests/e2e/internal/framework"
+	"github.com/wmcram/dcgm-exporter/tests/e2e/internal/framework"
 )
 
 const (

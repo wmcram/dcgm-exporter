@@ -24,7 +24,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
 )
 
 func TestEmptyConfigMap(t *testing.T) {

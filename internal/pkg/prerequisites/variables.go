@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"regexp"
 
-	elfinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/elf"
-	execinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/exec"
-	osinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/os"
+	elfinterface "github.com/wmcram/dcgm-exporter/internal/pkg/elf"
+	execinterface "github.com/wmcram/dcgm-exporter/internal/pkg/exec"
+	osinterface "github.com/wmcram/dcgm-exporter/internal/pkg/os"
 )
 
 var (

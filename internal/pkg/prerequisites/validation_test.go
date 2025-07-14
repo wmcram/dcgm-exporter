@@ -23,9 +23,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	mockelf "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/elf"
-	mockexec "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/exec"
-	mockos "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/os"
+	mockelf "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/elf"
+	mockexec "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/exec"
+	mockos "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/os"
 
 	realos "os"
 )

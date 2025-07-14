@@ -20,7 +20,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/NVIDIA/dcgm-exporter/pkg/cmd"
+	"github.com/wmcram/dcgm-exporter/pkg/cmd"
 )
 
 var BuildVersion = "Filled by the build system"

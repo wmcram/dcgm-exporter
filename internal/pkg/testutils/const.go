@@ -19,7 +19,7 @@ package testutils
 import (
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
 )
 
 var fakeProfileName = "2fake.4gb"

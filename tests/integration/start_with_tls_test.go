@@ -12,7 +12,7 @@ import (
 	"github.com/avast/retry-go/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/NVIDIA/dcgm-exporter/pkg/cmd"
+	"github.com/wmcram/dcgm-exporter/pkg/cmd"
 )
 
 func TestStartWithTLSEnabledAndBasicAuth(t *testing.T) {

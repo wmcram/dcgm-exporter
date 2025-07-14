@@ -23,9 +23,9 @@ import (
 
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatchlistmanager"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatchlistmanager"
 )
 
 type xidCollector struct {

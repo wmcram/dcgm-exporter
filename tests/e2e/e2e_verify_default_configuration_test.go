@@ -30,7 +30,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/utils/ptr"
 
-	"github.com/NVIDIA/dcgm-exporter/tests/e2e/internal/framework"
+	"github.com/wmcram/dcgm-exporter/tests/e2e/internal/framework"
 )
 
 // VerifyDefaultHelmConfiguration tests the helm chart with default configuration

@@ -24,7 +24,7 @@ import (
 
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
 )
 
 /*

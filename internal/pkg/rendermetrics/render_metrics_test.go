@@ -24,8 +24,8 @@ import (
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
 )
 
 func getMetricsByCounterWithTestMetric() collector.MetricsByCounter {

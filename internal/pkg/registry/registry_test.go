@@ -26,8 +26,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	collectorpkg "github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
+	collectorpkg "github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
 )
 
 type mockCollector struct {

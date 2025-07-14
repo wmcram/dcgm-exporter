@@ -30,14 +30,14 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/prometheus/exporter-toolkit/web"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/debug"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatchlistmanager"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/logging"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/registry"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/rendermetrics"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/transformation"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/utils"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/debug"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatchlistmanager"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/logging"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/registry"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/rendermetrics"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/transformation"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/utils"
 )
 
 const internalServerError = "internal server error"

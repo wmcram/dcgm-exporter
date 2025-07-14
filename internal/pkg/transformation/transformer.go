@@ -17,7 +17,7 @@
 package transformation
 
 import (
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
 )
 
 // GetTransformations return list of transformation applicable for metrics

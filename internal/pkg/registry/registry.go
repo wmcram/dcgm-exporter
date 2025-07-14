@@ -23,8 +23,8 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
 )
 
 // groupCounterTuple represents a composite key, that consists Group and Counter.

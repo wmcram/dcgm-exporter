@@ -26,8 +26,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	mockelf "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/elf"
-	mockexec "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/exec"
+	mockelf "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/elf"
+	mockexec "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/exec"
 )
 
 func Test_dcgmLibExistsRule_Validate(t *testing.T) {

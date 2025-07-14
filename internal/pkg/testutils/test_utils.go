@@ -33,8 +33,8 @@ import (
 	"google.golang.org/grpc"
 	v1 "k8s.io/kubelet/pkg/apis/podresources/v1"
 
-	mockdeviceinfo "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
+	mockdeviceinfo "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
 )
 
 // MockReader is a mock implementation of rand.Reader that always returns an error

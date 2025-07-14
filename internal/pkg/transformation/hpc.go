@@ -24,11 +24,11 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/logging"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/utils"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/logging"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/utils"
 )
 
 type hpcMapper struct {

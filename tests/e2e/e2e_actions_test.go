@@ -34,7 +34,7 @@ import (
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/NVIDIA/dcgm-exporter/tests/e2e/internal/framework"
+	"github.com/wmcram/dcgm-exporter/tests/e2e/internal/framework"
 )
 
 func shouldCreateK8SConfig() *restclient.Config {

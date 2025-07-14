@@ -19,7 +19,7 @@ package registry
 import (
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
 )
 
 // MetricsByCounterGroup represents a group of metrics by specific counter groups

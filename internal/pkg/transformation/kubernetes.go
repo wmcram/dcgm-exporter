@@ -36,11 +36,11 @@ import (
 	"k8s.io/client-go/rest"
 	podresourcesapi "k8s.io/kubelet/pkg/apis/podresources/v1"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/nvmlprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/utils"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/nvmlprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/utils"
 )
 
 var (

@@ -35,15 +35,15 @@ import (
 	v1 "k8s.io/kubelet/pkg/apis/podresources/v1"
 	"k8s.io/utils/ptr"
 
-	mockdcgmprovider "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/dcgmprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/dcgmprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatcher"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatchlistmanager"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/rendermetrics"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/testutils"
+	mockdcgmprovider "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatcher"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatchlistmanager"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/rendermetrics"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/testutils"
 )
 
 var deviceWatcher = devicewatcher.NewDeviceWatcher()

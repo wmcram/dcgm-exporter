@@ -24,9 +24,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 
-	osmock "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/os"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	osinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/os"
+	osmock "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/os"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	osinterface "github.com/wmcram/dcgm-exporter/internal/pkg/os"
 )
 
 func TestGetHostname(t *testing.T) {

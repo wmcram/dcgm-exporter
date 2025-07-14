@@ -19,8 +19,8 @@ package testutils
 import (
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	osinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/os"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	osinterface "github.com/wmcram/dcgm-exporter/internal/pkg/os"
 )
 
 var os osinterface.OS = osinterface.RealOS{}

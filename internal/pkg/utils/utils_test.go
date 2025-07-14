@@ -26,7 +26,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/testutils"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/testutils"
 )
 
 func TestWaitWithTimeout(t *testing.T) {

@@ -24,8 +24,8 @@ import (
 
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
 )
 
 //go:generate go run -v go.uber.org/mock/mockgen  -destination=../../mocks/pkg/collector/mock_collector.go -package=collector -copyright_file=../../../hack/header.txt . Collector

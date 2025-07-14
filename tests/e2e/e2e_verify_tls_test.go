@@ -29,7 +29,7 @@ import (
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/NVIDIA/dcgm-exporter/tests/e2e/internal/framework"
+	"github.com/wmcram/dcgm-exporter/tests/e2e/internal/framework"
 )
 
 // VerifyHelmConfigurationWhenTLSEnabled tests configuration when TLS is enabled

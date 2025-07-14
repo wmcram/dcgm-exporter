@@ -26,8 +26,8 @@ import (
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 	"github.com/bits-and-blooms/bitset"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/dcgmprovider"
 )
 
 const deviceInitMessage = "System entities of type %s initialized"

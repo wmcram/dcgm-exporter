@@ -24,12 +24,12 @@ import (
 
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/dcgmprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicemonitoring"
-	. "github.com/NVIDIA/dcgm-exporter/internal/pkg/logging"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/utils"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicemonitoring"
+	. "github.com/wmcram/dcgm-exporter/internal/pkg/logging"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/utils"
 )
 
 type DeviceWatcher struct{}

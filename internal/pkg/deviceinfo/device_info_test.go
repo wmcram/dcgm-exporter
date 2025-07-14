@@ -26,9 +26,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	mockdcgm "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/dcgmprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/dcgmprovider"
+	mockdcgm "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/dcgmprovider"
 )
 
 var fakeProfileName = "2fake.4gb"

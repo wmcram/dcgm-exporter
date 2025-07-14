@@ -29,17 +29,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 
-	mockcollectorpkg "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/collector"
-	mockdeviceinfo "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/deviceinfo"
-	mockdevicewatchlistmanager "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/devicewatchlistmanager"
-	mocktransformation "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/transformation"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatcher"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/devicewatchlistmanager"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/registry"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/transformation"
+	mockcollectorpkg "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/collector"
+	mockdeviceinfo "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/deviceinfo"
+	mockdevicewatchlistmanager "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/devicewatchlistmanager"
+	mocktransformation "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/transformation"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatcher"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/devicewatchlistmanager"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/registry"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/transformation"
 )
 
 const expectedResponse = `# HELP TEST_METRIC 

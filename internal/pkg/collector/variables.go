@@ -16,6 +16,6 @@
 
 package collector
 
-import osinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/os"
+import osinterface "github.com/wmcram/dcgm-exporter/internal/pkg/os"
 
 var os osinterface.OS = osinterface.RealOS{}

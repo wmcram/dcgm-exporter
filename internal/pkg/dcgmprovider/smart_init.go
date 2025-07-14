@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
 )
 

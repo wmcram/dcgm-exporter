@@ -29,11 +29,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	mockos "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/os"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	osinterface "github.com/NVIDIA/dcgm-exporter/internal/pkg/os"
+	mockos "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/os"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	osinterface "github.com/wmcram/dcgm-exporter/internal/pkg/os"
 )
 
 func TestHPCProcess(t *testing.T) {

@@ -33,16 +33,16 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	podresourcesapi "k8s.io/kubelet/pkg/apis/podresources/v1"
 
-	mockdeviceinfo "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/deviceinfo"
-	mocknvmlprovider "github.com/NVIDIA/dcgm-exporter/internal/mocks/pkg/nvmlprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/appconfig"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/collector"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/counters"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/dcgmprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/deviceinfo"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/nvmlprovider"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/testutils"
-	"github.com/NVIDIA/dcgm-exporter/internal/pkg/utils"
+	mockdeviceinfo "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/deviceinfo"
+	mocknvmlprovider "github.com/wmcram/dcgm-exporter/internal/mocks/pkg/nvmlprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/appconfig"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/collector"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/counters"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/dcgmprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/deviceinfo"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/nvmlprovider"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/testutils"
+	"github.com/wmcram/dcgm-exporter/internal/pkg/utils"
 )
 
 func TestProcessPodMapper_WithD_Different_Format_Of_DeviceID(t *testing.T) {
