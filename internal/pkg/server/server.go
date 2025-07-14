@@ -171,7 +171,7 @@ func (s *MetricsServer) Metrics(w http.ResponseWriter, _ *http.Request) {
 		return
 	}
 	var buf bytes.Buffer
-	err = s.render(&buf, metricGroups)
+	err = s.Render(&buf, metricGroups)
 	if err != nil {
 		http.Error(w, internalServerError, http.StatusInternalServerError)
 		return
@@ -184,7 +184,7 @@ func (s *MetricsServer) Metrics(w http.ResponseWriter, _ *http.Request) {
 	}
 }
 
-func (s *MetricsServer) render(w io.Writer, metricGroups registry.MetricsByCounterGroup) error {
+func (s *MetricsServer) Render(w io.Writer, metricGroups registry.MetricsByCounterGroup) error {
 	for group, metrics := range metricGroups {
 		deviceWatchList, exists := s.deviceWatchListManager.EntityWatchList(group)
 		if exists {
