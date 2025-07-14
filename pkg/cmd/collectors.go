@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"bytes"
+	"flag"
 	"log/slog"
 
 	"github.com/prometheus/client_golang/prometheus"
@@ -94,8 +95,19 @@ func (d *DcgmCollector) Collect(ch chan<- prometheus.Metric) {
 
 func GetCollector() (*DcgmCollector, error) {
 	app := NewApp()
-	c := cli.NewContext(app, nil, nil)
+	
+	set := flag.NewFlagSet("dcgm", flag.PanicOnError)
 
+	set.String(CLIGPUDevices, "f", "")
+	set.String(CLISwitchDevices, "f", "")
+	set.String(CLICPUDevices, "f", "")
+	set.String(CLIDCGMLogLevel, "NONE", "")
+	set.Bool(CLIDumpEnabled, false, "")
+	set.String(CLIDumpDirectory, "/tmp/dcgm-exporter-debug", "")
+	set.Int(CLIDumpRetention, 24, "")
+	set.Bool(CLIDumpCompression, true, "")
+
+	c := cli.NewContext(app, set, nil)
 
 	config, err := contextToConfig(c)
 	if err != nil {
