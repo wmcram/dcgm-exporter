@@ -17,15 +17,13 @@
 package counters
 
 import (
-	"context"
 	"encoding/csv"
 	"fmt"
 	"log/slog"
 	"strings"
+	_ "embed"
 
 	"github.com/NVIDIA/go-dcgm/pkg/dcgm"
-	corev1 "k8s.io/api/core/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
@@ -163,23 +161,13 @@ func fieldIsSupported(fieldID uint, c *appconfig.Config) bool {
 	return false
 }
 
+
+//go:embed default-counters.csv
+var defaultCounters string
+
 func readConfigMap(kubeClient kubernetes.Interface, c *appconfig.Config) ([][]string, error) {
-	parts := strings.Split(c.ConfigMapData, ":")
-	if len(parts) != 2 {
-		return nil, fmt.Errorf("malformed configmap-data '%s'", c.ConfigMapData)
-	}
 
-	var cm *corev1.ConfigMap
-	cm, err := kubeClient.CoreV1().ConfigMaps(parts[0]).Get(context.TODO(), parts[1], metav1.GetOptions{})
-	if err != nil {
-		return nil, fmt.Errorf("could not retrieve ConfigMap '%s'; err: %w", c.ConfigMapData, err)
-	}
-
-	if _, ok := cm.Data["metrics"]; !ok {
-		return nil, fmt.Errorf("malformed ConfigMap '%s'; no 'metrics' key", c.ConfigMapData)
-	}
-
-	r := csv.NewReader(strings.NewReader(cm.Data["metrics"]))
+	r := csv.NewReader(strings.NewReader(defaultCounters))
 	r.Comment = '#'
 	records, err := r.ReadAll()
 

@@ -2,9 +2,7 @@ package cmd
 
 import (
 	"bytes"
-	"flag"
 	"log/slog"
-	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
@@ -95,45 +93,10 @@ func (d *DcgmCollector) Collect(ch chan<- prometheus.Metric) {
 
 
 func GetCollector() (*DcgmCollector, error) {
-	app := NewApp()
-	
-	// Create a flag set with all the CLI flags
-	set := flag.NewFlagSet("dcgm", flag.PanicOnError)
-	
-	// Add all the flags that would be available in CLI mode
-	set.String(CLIFieldsFile, "/etc/dcgm-exporter/default-counters.csv", "")
-	set.String(CLIAddress, ":9400", "")
-	set.Int(CLICollectInterval, 30000, "")
-	set.Bool(CLIKubernetes, false, "")
-	set.Bool(CLIUseOldNamespace, false, "")
-	set.String(CLIRemoteHEInfo, "localhost:5555", "")
-	set.Bool(CLIKubernetesEnablePodLabels, false, "")
-	set.String(CLIKubernetesGPUIDType, "UUID", "")
-	set.String(CLIGPUDevices, "f", "")
-	set.Bool(CLINoHostname, false, "")
-	set.String(CLISwitchDevices, "f", "")
-	set.String(CLICPUDevices, "f", "")
-	set.Bool(CLIUseFakeGPUs, false, "")
-	set.String(CLIWebConfigFile, "", "")
-	set.Int(CLIXIDCountWindowSize, int((5 * time.Minute).Milliseconds()), "")
-	set.Bool(CLIReplaceBlanksInModelName, false, "")
-	set.Bool(CLIDebugMode, false, "")
-	set.Int(CLIClockEventsCountWindowSize, int((5 * time.Minute).Milliseconds()), "")
-	set.Bool(CLIEnableDCGMLog, false, "")
-	set.String(CLIDCGMLogLevel, "NONE", "")
-	set.String(CLILogFormat, "text", "")
-	set.String(CLIPodResourcesKubeletSocket, "/var/lib/kubelet/pod-resources/kubelet.sock", "")
-	set.String(CLIHPCJobMappingDir, "", "")
-	set.Bool(CLIKubernetesVirtualGPUs, false, "")
-	set.Bool(CLIDumpEnabled, false, "")
-	set.String(CLIDumpDirectory, "/tmp/dcgm-exporter-debug", "")
-	set.Int(CLIDumpRetention, 24, "")
-	set.Bool(CLIDumpCompression, true, "")
-	set.Bool(CLIWebSystemdSocket, false, "")
-	
-	// Create CLI context with the flag set
-	c := cli.NewContext(app, set, nil)
 
+	// Create an app config with default values
+	app := NewApp()
+	c := cli.NewContext(app, nil, nil)
 	config, err := contextToConfig(c)
 	if err != nil {
 		return nil, err
