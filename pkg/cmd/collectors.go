@@ -114,11 +114,6 @@ func GetCollector() (*DcgmCollector, error) {
 		return nil, err
 	}
 
-	err = prerequisites.Validate()
-	if err != nil {
-		return nil, err
-	}
-
 	dcgmprovider.Initialize(config)
 	dcgmCleanup := dcgmprovider.Client().Cleanup
 
